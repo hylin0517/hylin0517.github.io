@@ -14,7 +14,6 @@ minimal_mistakes_skin: "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon
 
 # Build settings
 markdown: kramdown
-remote_theme: "mmistakes/minimal-mistakes@4.24.0"
 
 # Plugins
 plugins:
@@ -66,19 +65,19 @@ defaults:
 author:
   name: "Hao Yang Lin"
   avatar: "/assets/images/bio-photo.jpg" # Optional: add later
-  bio: "Graduate Student exploring the world with data"
+  bio: "Exploring the world with data"
   location: "New York, USA"
-  email: "your.email@example.com"
+  email: "hylin0517@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:your.email@example.com"
+      url: "mailto:hylin0517@gmail.com"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/hylin0517"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
-      url: "https://linkedin.com/in/yourprofile"
+      url: "https://www.linkedin.com/in/haoyang-lin/"
 
 # Site Footer
 footer:

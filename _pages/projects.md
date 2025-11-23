@@ -3,78 +3,21 @@ permalink: /projects/
 title: "Projects"
 ---
 
-# My Data Science Projects
+# Projects
 
-Here's a collection of projects that demonstrate my skills in data analysis, machine learning, and visualization. Each project tackles a different problem using various techniques and tools.
-
----
-
-## Featured Projects
-
-### 🎯 Project 1: [Project Name]
-
-**Brief Description:** One sentence about what this project does and why it matters.
-
-**Problem:** What problem were you trying to solve?
-
-**Approach:** 
-- Collected and cleaned [type of data]
-- Performed exploratory data analysis
-- Built [type of model] using [algorithms]
-- Evaluated performance using [metrics]
-
-**Key Results:**
-- Achieved [X]% accuracy/improvement
-- Discovered [key insight]
-- [Another result]
-
-**Technologies Used:** Python, Pandas, scikit-learn, Matplotlib
-
-**Links:**
-- [GitHub Repository](https://github.com/hylin0517/project-repo)
-- [Detailed Write-up](/2024/11/23/project-name/) *(optional - if you create a blog post)*
-- [Live Demo](link) *(optional)*
-
-**Highlights:**
-
-![Project Screenshot or Visualization](/assets/images/project1-viz.png)
-*Caption describing what the image shows*
+A snapshot of recent work in analytics and machine learning.
 
 ---
 
-### 📊 Project 2: [Project Name]
+## [Customer Churn Prediction](/projects/customer-churn-prediction/)
+- **Goal:** Flag at-risk telecom customers before they churn.
+- **Approach:** Cleaned and engineered customer usage data; tested Logistic Regression, Random Forest, and XGBoost; selected XGBoost based on validation metrics.
+- **Result:** ~87% accuracy with explainability via feature importance (contract type, tenure, monthly charges, support usage).
+- **Stack:** Python, pandas, scikit-learn, XGBoost, matplotlib.
+- **Links:** [Case study](/projects/customer-churn-prediction/) · [GitHub repo](https://github.com/hylin0517/AMS317-Group3)
 
-**Brief Description:** One sentence about what this project does and why it matters.
+---
 
-**Problem:** What problem were you trying to solve?
-
-**Approach:** 
-- [Step 1]
-- [Step 2]
-- [Step 3]
-
-**Key Results:**
-- [Result 1]
-- [Result 2]
-- [Result 3]
-
-**Technologies Used:** R, ggplot2, dplyr, Shiny
-
-**Links:**
-- [GitHub Repository](https://github.com/hylin0517/project-repo)
-- [Detailed Write-up](/2024/11/23/project-name/)
-
-**Highlights:**
-
-![Project Visualization](/assets/images/project2-viz.png)
-*Caption*
-
-
-
-## What's Next?
-
-I'm currently working on:
-- [Upcoming project 1]
-- [Upcoming project 2]
-
-Have an interesting project idea or want to collaborate? [Get in touch!](/about/)
+## More work coming soon
+- Building out additional projects on recommendation, forecasting, and experimentation.
+- If you'd like to collaborate or see something specific, let me know via [About](/about/).

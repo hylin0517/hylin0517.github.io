@@ -1,8 +1,7 @@
 ---
 layout: single
 title: "Customer Churn Prediction"
-date: 2024-11-23
-categories: [machine-learning]
+permalink: /projects/customer-churn-prediction/
 tags: [python, classification, xgboost]
 excerpt: "Built a machine learning model to predict customer churn with 87% accuracy using XGBoost."
 ---
@@ -18,7 +17,7 @@ Developed a classification model to predict which customers are likely to churn,
 
 **Tech Stack:** Python, Pandas, Scikit-learn, XGBoost, Matplotlib
 
-**GitHub:** [View Code](https://github.com/hylin0517/churn-prediction)
+**GitHub:** [View Code](https://github.com/hylin0517/AMS317-Group3)
 
 ---
 
