@@ -4,7 +4,7 @@ url: "https://hylin0517.github.io"
 baseurl: ""
 
 # Use a simple theme
-theme: slate
+theme: cayman
 
 # Exclude README from the site
 exclude:
