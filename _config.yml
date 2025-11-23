@@ -1,11 +1,91 @@
-title: Hao Yang Lin - Data Science Portfolio
-description: MSA Student @ GT | Data Science & Machine Learning
+# Site Settings
+title: "Hao Yang Lin"
+title_separator: "-"
+subtitle: "Exploring the World w Data"
+name: "Hao Yang Lin"
+description: "MSA (Analytics & Data Science) @ GT | Data Science & Machine Learning"
 url: "https://hylin0517.github.io"
 baseurl: ""
+repository: "hylin0517/hylin0517.github.io"
 
-# Use a simple theme
-theme: jekyll-theme-cayman
+# Theme
+remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+minimal_mistakes_skin: "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
-# Exclude README from the site
+# Build settings
+markdown: kramdown
+remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+
+# Plugins
+plugins:
+  - jekyll-remote-theme
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jekyll-include-cache
+
+# Reading Files
+include:
+  - _pages
+
+# Exclude from processing
 exclude:
   - README.md
+  - Gemfile
+  - Gemfile.lock
+
+# Outputting
+permalink: /:categories/:title/
+paginate: 5
+paginate_path: /page:num/
+timezone: America/New_York
+
+# Defaults
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: false
+      share: true
+      related: true
+  # _pages
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+
+# Site Author
+author:
+  name: "Hao Yang Lin"
+  avatar: "/assets/images/bio-photo.jpg" # Optional: add later
+  bio: "Graduate Student exploring the world with data"
+  location: "New York, USA"
+  email: "your.email@example.com"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:your.email@example.com"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/hylin0517"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://linkedin.com/in/yourprofile"
+
+# Site Footer
+footer:
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/hylin0517"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://linkedin.com/in/yourprofile"
