@@ -18,3 +18,20 @@ html {
   font-size: 16px;     
   line-height: 1.6;  
 }
+
+.masthead .site-title {
+  font-size: 1.6rem; /* enlarge name in the navbar */
+}
+
+.masthead__menu-item a {
+  font-size: 1.2rem;
+}
+
+.sidebar .author__name {
+  font-size: 1.5rem;
+}
+
+.sidebar .author__bio,
+.sidebar .author__urls {
+  font-size: 1.05rem;
+}
