@@ -38,8 +38,6 @@ A telecommunications company needed to identify at-risk customers before they le
 
 ## Key Findings
 
-![Feature Importance](/assets/images/churn-feature-importance.png)
-
 **Top churn indicators:**
 - Contract type (month-to-month vs annual)
 - Customer tenure
