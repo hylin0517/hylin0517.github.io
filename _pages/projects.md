@@ -6,7 +6,7 @@ author_profile: true
 classes: wide
 ---
 
-## Current Work in Progress
+## Work in Progress
 
 ## [Spotify New Song Recommender](/projects/spotify-recommendation/)
 
