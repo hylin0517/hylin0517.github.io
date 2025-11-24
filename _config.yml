@@ -12,21 +12,21 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "contrast" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "air" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
-title                    : hylin Data Science Portfolio
+title                    : Hao Yang Lin
 title_separator          : "|"
-subtitle                 : Data Science & Analytics, Machine Learing, Big Data # site tagline that appears below site title in masthead
+subtitle                 : Data Science & Analytics, Machine Learing # site tagline that appears below site title in masthead
 name                     : "Hao Yang Lin"
 description              : "Website"
 url                      : https://hylin0517.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : hylin0517/hylin0517.github.io # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : "/assets/images/luffy.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs              : # true, false (default)
 words_per_minute         : 200
@@ -88,6 +88,27 @@ naver_site_verification  :
 yandex_site_verification :
 baidu_site_verification  :
 
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: single
+      entries_layout: grid
+      author_profile: true
+      read_time: true
+      comments: false
+      classes: wide
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+      classes: wide
+      
+      
 # Social Sharing
 twitter:
   username               :
@@ -114,14 +135,14 @@ analytics:
 # Site Author
 author:
   name             : "Hao Yang Lin"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "MSA @ GT | Data Science & Analytics, Machine Learning, Big Data"
-  location         : "New York, USA"
-  email            : "hylin0517@gmail.com"
+  avatar           : "/assets/images/luffy.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : "MSA Student @ GT " # short bio that appears in the author profile section
+  location         : "New York City, NY"
+  email            :
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:your.name@email.com"
+      # url: mailto:hylin0517@gmail.com
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
@@ -133,10 +154,10 @@ author:
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/"
+      url: "https://github.com/hylin0517/"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/haoyang-lin/"
 
 # Site Footer
 footer:
@@ -149,17 +170,16 @@ footer:
       # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url:
+      url: "https://github.com/hylin0517/"
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url:
     - label: "Bitbucket"
       icon: "fab fa-fw fa-bitbucket"
       # url:
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      # url:
-  since: "2013"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/haoyang-lin"
 
 
 # Reading Files
