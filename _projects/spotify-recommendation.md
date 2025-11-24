@@ -10,6 +10,7 @@ excerpt: "Leveraged Spotifyʼs API data and ML pipelines to recommend new songs 
 Built a recommendation pipeline that surfaces new songs a user is likely to enjoy by combining Spotify API metadata with engineered features and machine learning.
 
 **Key Results:**
+
 - Featured a Streamlit demo for live recommendation exploration
 - Validated model with precision, recall, and ranking metrics
 - Trained on millions of streaming records pulled via Spotifyʼs Web API
@@ -39,6 +40,7 @@ Spotify playlist owners wanted a way to surface new songs that aligned with thei
 ## Key Findings
 
 **Most impactful signals:**
+
 - Recent streaming frequency and session duration
 - Genre affinity and mood proximity
 - Audio features (energy, danceability, valence)
