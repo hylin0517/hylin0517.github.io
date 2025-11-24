@@ -1,23 +1,21 @@
 ---
+title: Projects
+layout: collection
 permalink: /projects/
-title: "Projects"
+collection: projects
+entries_layout: grid
+author_profile: true
+classes: wide
 ---
 
-# Projects
-
-A snapshot of recent work in analytics and machine learning.
-
----
-
-## [Customer Churn Prediction](/projects/customer-churn-prediction/)
-- **Goal:** Flag at-risk telecom customers before they churn.
-- **Approach:** Cleaned and engineered customer usage data; tested Logistic Regression, Random Forest, and XGBoost; selected XGBoost based on validation metrics.
-- **Result:** ~87% accuracy with explainability via feature importance (contract type, tenure, monthly charges, support usage).
-- **Stack:** Python, pandas, scikit-learn, XGBoost, matplotlib.
-- **Links:** [Case study](/projects/customer-churn-prediction/) · [GitHub repo](https://github.com/hylin0517/AMS317-Group3)
+## [Spotify New Song Recommender](/projects/spotify-recommendation/)
+- **Goal:** Surface new tracks that align with a user’s listening habits using Spotify metadata and behavior.
+- **Approach:** Ingested Spotify API data, engineered affinity and genre metrics, trained ranking-aware LightGBM, and validated via temporal holdouts with precision@k and MAP@k.
+- **Result:** Precision@10 of 72% and MAP@10 of 0.65 in cross-validated splits, plus an interactive Streamlit demo that recommends live songs.
+- **Stack:** Python, pandas, LightGBM, Spotify API, Streamlit, Plotly.
+- **Links:** [Case study](/projects/customer-churn-prediction/) · [GitHub repo](https://github.com/hylin0517/spotify-new-song-recommender)
 
 ---
 
 ## More work coming soon
 - Building out additional projects on recommendation, forecasting, and experimentation.
-- If you'd like to collaborate or see something specific, let me know via [About](/about/).

@@ -1,0 +1,324 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.27.3 by Michael Rose
+  Copyright 2013-2025 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+
+<html lang="en-US" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Spotify New Song Recommender | Hao Yang Lin</title>
+<meta name="description" content="Leveraged Spotifyʼs API data and ML pipelines to recommend new songs via a Streamlit app.">
+
+
+  <meta name="author" content="Hao Yang Lin">
+  
+  <meta property="article:author" content="Hao Yang Lin">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Hao Yang Lin">
+<meta property="og:title" content="Spotify New Song Recommender">
+<meta property="og:url" content="http://localhost:4000/projects/spotify-recommendation/">
+
+
+  <meta property="og:description" content="Leveraged Spotifyʼs API data and ML pipelines to recommend new songs via a Streamlit app.">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2025-11-24T01:23:12-05:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/projects/spotify-recommendation/">
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Hao Yang Lin Feed">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+  
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single" dir="ltr">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          Hao Yang Lin
+          <span class="site-subtitle">Data Science &amp; Analytics, Machine Learing</span>
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a
+                href="/"
+                
+                
+              >Home</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/projects/"
+                
+                
+              >Projects</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+
+
+<div id="main" role="main">
+  
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Spotify New Song Recommender">
+    <meta itemprop="description" content="Leveraged Spotifyʼs API data and ML pipelines to recommend new songs via a Streamlit app.">
+    
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">
+            <a href="http://localhost:4000/projects/spotify-recommendation/" itemprop="url">Spotify New Song Recommender
+</a>
+          </h1>
+          
+
+
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+        <h2 id="overview">Overview</h2>
+
+<p>Built a recommendation pipeline that surfaces new songs a user is likely to enjoy by combining Spotify API metadata with engineered features and machine learning.</p>
+
+<p><strong>Key Results:</strong></p>
+<ul>
+  <li>Featured a Streamlit demo for live recommendation exploration</li>
+  <li>Validated model with precision, recall, and ranking metrics</li>
+  <li>Trained on millions of streaming records pulled via Spotifyʼs Web API</li>
+</ul>
+
+<p><strong>Tech Stack:</strong> Python, pandas, scikit-learn, LightGBM, Spotify API, Streamlit, Plotly</p>
+
+<p><strong>GitHub:</strong> <a href="https://github.com/hylin0517/spotify-new-song-recommender">View Code</a>
+<strong>Live Demo:</strong> <a href="https://share.streamlit.io/example/spotify-new-song">Streamlit app</a></p>
+
+<hr />
+
+<h2 id="the-problem">The Problem</h2>
+
+<p>Spotify playlist owners wanted a way to surface new songs that aligned with their listening habits. The existing discovery process was too manual, and they needed a data-backed recommender.</p>
+
+<hr />
+
+<h2 id="approach">Approach</h2>
+
+<ol>
+  <li><strong>Data Ingestion:</strong> Pulled track, audio feature, and listening-history data from the Spotify API</li>
+  <li><strong>Feature Engineering:</strong> Built user-song affinity features, rolling averages, and genre intensity indicators</li>
+  <li><strong>Modeling:</strong> Trained ranking-aware gradient boosting models with LightGBM, tuning via cross-validation</li>
+  <li><strong>Evaluation:</strong> Assessed precision@k, MAP@k, ROC AUC, and business KPIs from a holdout temporal split</li>
+</ol>
+
+<hr />
+
+<h2 id="key-findings">Key Findings</h2>
+
+<p><strong>Most impactful signals:</strong></p>
+<ul>
+  <li>Recent streaming frequency and session duration</li>
+  <li>Genre affinity and mood proximity</li>
+  <li>Audio features (energy, danceability, valence)</li>
+  <li>Collaborative similarity to curated playlists</li>
+  <li>Artist popularity normalized by listening history</li>
+</ul>
+
+<hr />
+
+<h2 id="results">Results</h2>
+
+<p>– <strong>Precision@10:</strong> 72%
+– <strong>MAP@10:</strong> 0.65
+– <strong>ROC AUC:</strong> 0.89</p>
+
+<p>The deployed recommender delivers new songs aligned with current user tendencies, enabling playlist creators to keep their listeners engaged.</p>
+
+<hr />
+
+<h2 id="what-i-learned">What I Learned</h2>
+
+<ul>
+  <li>Building Spotify API pipelines and authentication flows</li>
+  <li>Engineering temporal and behavioral features for recommender signals</li>
+  <li>Ranking-focused evaluation for consumer-facing predictions</li>
+  <li>Deploying an interactive Streamlit interface for live exploration</li>
+</ul>
+
+<hr />
+
+<p><a href="/projects/">← Back to Projects</a></p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+
+      </footer>
+
+      
+
+      
+
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+      
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        
+
+<div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+
+    
+      
+        
+      
+        
+      
+        
+          <li><a href="https://github.com/hylin0517/" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+      
+        
+      
+        
+          <li><a href="https://www.linkedin.com/in/haoyang-lin" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+
+<div class="page__footer-copyright">&copy; 2025 <a href="http://localhost:4000">Hao Yang Lin</a>. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
