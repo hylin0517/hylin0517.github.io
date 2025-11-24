@@ -18,10 +18,10 @@ minimal_mistakes_skin    : "air" # "air", "aqua", "contrast", "dark", "dirt", "n
 locale                   : "en-US"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
 title                    : Hao Yang Lin
-title_separator          : "|"
-subtitle                 : Data Science & Analytics, Machine Learing # site tagline that appears below site title in masthead
+title_separator          : "-" # string to separate title elements
+subtitle                 : Data Science & Analytics, Machine Learning # site tagline that appears below site title in masthead
 name                     : "Hao Yang Lin"
-description              : "Website"
+description              : "Personal Website of Hao Yang Lin to showcase projects"
 url                      : https://hylin0517.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : hylin0517/hylin0517.github.io # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -90,16 +90,7 @@ baidu_site_verification  :
 
 # Defaults
 defaults:
-  - scope:
-      path: ""
-      type: projects
-    values:
-      layout: single
-      entries_layout: grid
-      author_profile: true
-      read_time: true
-      comments: false
-      classes: wide
+# _pages
   - scope:
       path: ""
       type: pages
@@ -107,6 +98,17 @@ defaults:
       layout: single
       author_profile: true
       classes: wide
+# _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: # true
+      share: true
+      related: true
       
       
 # Social Sharing
@@ -330,18 +332,3 @@ compress_html:
   clippings: all
   ignore:
     envs: development
-
-
-# Defaults
-defaults:
-  # _posts
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: single
-      author_profile: true
-      read_time: true
-      comments: # true
-      share: true
-      related: true

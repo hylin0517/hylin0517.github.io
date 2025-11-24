@@ -1,12 +1,12 @@
 ---
 title: Projects
-layout: collection
+layout: single
 permalink: /projects/
-collection: projects
-entries_layout: grid
 author_profile: true
 classes: wide
 ---
+
+## Current Work in Progress
 
 ## [Spotify New Song Recommender](/projects/spotify-recommendation/)
 
