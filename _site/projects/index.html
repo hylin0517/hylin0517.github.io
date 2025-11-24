@@ -10,8 +10,8 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Projects | Hao Yang Lin</title>
-<meta name="description" content="Website">
+<!-- begin _includes/seo.html --><title>Projects - Hao Yang Lin</title>
+<meta name="description" content="Personal Website of Hao Yang Lin to showcase projects">
 
 
   <meta name="author" content="Hao Yang Lin">
@@ -25,7 +25,7 @@
 <meta property="og:url" content="http://localhost:4000/projects/">
 
 
-  <meta property="og:description" content="Website">
+  <meta property="og:description" content="Personal Website of Hao Yang Lin to showcase projects">
 
 
 
@@ -82,7 +82,7 @@
 
   </head>
 
-  <body class="layout--collection wide" dir="ltr">
+  <body class="layout--single wide" dir="ltr">
     <nav class="skip-links">
   <ul>
     <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
@@ -100,7 +100,7 @@
         
         <a class="site-title" href="/">
           Hao Yang Lin
-          <span class="site-subtitle">Data Science &amp; Analytics, Machine Learing</span>
+          <span class="site-subtitle">Data Science &amp; Analytics, Machine Learning</span>
         </a>
         <ul class="visible-links"><li class="masthead__menu-item">
               <a
@@ -129,6 +129,8 @@
 
     <div class="initial-content">
       
+
+
 
 
 
@@ -253,11 +255,31 @@
 
 
 
-  <div class="archive">
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Projects">
     
-      <h1 id="page-title" class="page__title">Projects</h1>
     
-    <h2 id="spotify-new-song-recommender"><a href="/projects/spotify-recommendation/">Spotify New Song Recommender</a></h2>
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">
+            <a href="http://localhost:4000/projects/" itemprop="url">Projects
+</a>
+          </h1>
+          
+
+
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+        <h2 id="current-work-in-progress">Current Work in Progress</h2>
+
+<h2 id="spotify-new-song-recommender"><a href="/projects/spotify-recommendation/">Spotify New Song Recommender</a></h2>
+
 <ul>
   <li><strong>Goal:</strong> Surface new tracks that align with a user’s listening habits using Spotify metadata and behavior.</li>
   <li><strong>Approach:</strong> Ingested Spotify API data, engineered affinity and genre metrics, trained ranking-aware LightGBM, and validated via temporal holdouts with precision@k and MAP@k.</li>
@@ -269,41 +291,34 @@
 <hr />
 
 <h2 id="more-work-coming-soon">More work coming soon</h2>
+
 <ul>
   <li>Building out additional projects on recommendation, forecasting, and experimentation.</li>
 </ul>
 
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
 
 
-<div class="entries-grid">
-  
+        
 
+      </footer>
 
-
-
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/projects/spotify-recommendation/" rel="permalink">Spotify New Song Recommender
-</a>
+
       
-    </h2>
+
+    </div>
+
     
-
-
-    <p class="archive__item-excerpt" itemprop="description">Leveraged Spotifyʼs API data and ML pipelines to recommend new songs via a Streamlit app.
-</p>
   </article>
-</div>
 
-</div>
-
-  </div>
+  
+  
 </div>
 
       

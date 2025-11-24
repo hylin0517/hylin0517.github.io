@@ -1,8 +1,6 @@
 ---
-layout: single
 title: "Spotify New Song Recommender"
 permalink: /projects/spotify-recommendation/
-excerpt: "Leveraged Spotifyʼs API data and ML pipelines to recommend new songs via a Streamlit app."
 ---
 
 ## Overview
