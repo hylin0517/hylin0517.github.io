@@ -1,4 +1,4 @@
-# Hao Yang Lin Portfolio
+# Personal Portfolio
 
 Personal portfolio website built with Jekyll and the Minimal Mistakes theme.
 
