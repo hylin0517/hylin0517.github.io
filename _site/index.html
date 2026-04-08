@@ -16,7 +16,7 @@
 
 
 <!-- begin _includes/seo.html --><title>Hao Yang Lin</title>
-<meta name="description" content="Hello! Thanks for visting! Press to view some of my projects completed based on my interests">
+<meta name="description" content="Hello! Thanks for visting! Press to view my collection of data projects made on my free time.">
 
 
   <meta name="author" content="Hao Yang Lin">
@@ -30,7 +30,7 @@
 <meta property="og:url" content="http://localhost:4000/">
 
 
-  <meta property="og:description" content="Hello! Thanks for visting! Press to view some of my projects completed based on my interests">
+  <meta property="og:description" content="Hello! Thanks for visting! Press to view my collection of data projects made on my free time.">
 
 
 
@@ -183,7 +183,7 @@
         
       </h1>
       
-        <p class="page__lead">Hello! Thanks for visting! Press to view some of my projects completed based on my interests
+        <p class="page__lead">Hello! Thanks for visting! Press to view my collection of data projects made on my free time.
 </p>
       
       
@@ -336,7 +336,7 @@
 
   <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
     <meta itemprop="headline" content="Hao Yang Lin">
-    <meta itemprop="description" content="Hello! Thanks for visting! Press to view some of my projects completed based on my interests">
+    <meta itemprop="description" content="Hello! Thanks for visting! Press to view my collection of data projects made on my free time.">
     
     
 
@@ -345,15 +345,128 @@
 
       <section class="page__content e-content" itemprop="text">
         
-        <h2>About</h2>
+        <h2>Featured Work</h2>
 <p>
-I am a Georgia Tech M.S. Analytics student in the Computational Data Science track. I have a background in Applied Mathematics and Statistics from Stony Brook University. I work primarily in <strong>Python</strong>, <strong>R</strong>, and <strong>SQL</strong>, and I am currently seeking data science, analytics, and machine learning internship or full-time opportunities.
+A sample of my recent work across different interests and skillsets. Click below to view more details about each project.
+</p>
+
+<div class="project-showcase-grid">
+  <article class="project-showcase">
+    <a class="project-showcase__media project-showcase__media--spotify" href="/projects/spotify-recommendation/" aria-label="Open Spotify New Song Recommender project">
+      <div class="project-showcase__frame">
+        <div class="project-showcase__placeholder project-showcase__placeholder--bars"></div>
+      </div>
+    </a>
+    <div class="project-showcase__eyebrow">Recommendation Systems</div>
+    <h2 class="project-showcase__title">
+      <a href="/projects/spotify-recommendation/">Spotify New Song Recommender</a>
+    </h2>
+    <p class="project-showcase__description">
+      A machine learning recommender that suggests newly released Spotify tracks based on listening history and song similarity.
+    </p>
+    <div class="project-showcase__tools">
+      <span class="project-showcase__tools-label">Tools Used</span>
+      <ul class="project-showcase__tool-list">
+        <li>Python</li>
+        <li>Spotify API</li>
+        <li>pandas</li>
+        <li>LightGBM</li>
+        <li>Plotly</li>
+      </ul>
+    </div>
+    <div class="project-showcase__links">
+      <a class="project-showcase__repo" href="https://github.com/your-username/spotify-new-song-recommender" target="_blank" rel="noopener noreferrer" aria-label="Spotify New Song Recommender GitHub repository">
+        <i class="fab fa-github" aria-hidden="true"></i>
+      </a>
+    </div>
+  </article>
+
+  <article class="project-showcase">
+    <a class="project-showcase__media project-showcase__media--nba" href="/projects/nba-ticket-demand-pricing/" aria-label="Open NBA Ticket Demand Forecasting project">
+      <div class="project-showcase__frame">
+        <div class="project-showcase__placeholder project-showcase__placeholder--court"></div>
+      </div>
+    </a>
+    <div class="project-showcase__eyebrow">Pricing & Forecasting</div>
+    <h2 class="project-showcase__title">
+      <a href="/projects/nba-ticket-demand-pricing/">NBA Ticket Demand Forecasting</a>
+    </h2>
+    <p class="project-showcase__description">
+      A forecasting and pricing project that estimates NBA ticket demand and recommends how prices should move before each game.
+    </p>
+    <div class="project-showcase__tools">
+      <span class="project-showcase__tools-label">Tools Used</span>
+      <ul class="project-showcase__tool-list">
+        <li>Python</li>
+        <li>pandas</li>
+        <li>XGBoost</li>
+        <li>statsmodels</li>
+        <li>scikit-learn</li>
+      </ul>
+    </div>
+    <div class="project-showcase__links">
+      <a class="project-showcase__repo" href="https://github.com/your-username/nba-ticket-demand-pricing" target="_blank" rel="noopener noreferrer" aria-label="NBA Ticket Demand Forecasting GitHub repository">
+        <i class="fab fa-github" aria-hidden="true"></i>
+      </a>
+    </div>
+  </article>
+
+  <article class="project-showcase">
+    <a class="project-showcase__media project-showcase__media--airbnb" href="/projects/airbnb-nyc-pricing-analysis/" aria-label="Open Airbnb NYC Pricing Analysis project">
+      <div class="project-showcase__frame">
+        <div class="project-showcase__placeholder project-showcase__placeholder--map"></div>
+      </div>
+    </a>
+    <div class="project-showcase__eyebrow">Data Science</div>
+    <h2 class="project-showcase__title">
+      <a href="/projects/airbnb-nyc-pricing-analysis/">Airbnb NYC Pricing Analysis</a>
+    </h2>
+    <p class="project-showcase__description">
+      An analysis of what drives Airbnb prices in New York City and how accurately listing prices can be predicted from listing features.
+    </p>
+    <div class="project-showcase__tools">
+      <span class="project-showcase__tools-label">Tools Used</span>
+      <ul class="project-showcase__tool-list">
+        <li>R</li>
+        <li>tidyverse</li>
+        <li>ggplot2</li>
+        <li>caret</li>
+        <li>R Markdown</li>
+      </ul>
+    </div>
+    <div class="project-showcase__links">
+      <a class="project-showcase__repo" href="https://github.com/your-username/airbnb-nyc-pricing-analysis" target="_blank" rel="noopener noreferrer" aria-label="Airbnb NYC Pricing Analysis GitHub repository">
+        <i class="fab fa-github" aria-hidden="true"></i>
+      </a>
+    </div>
+  </article>
+</div>
+
+<p class="project-card-grid__footer">
+  <a class="btn btn--light-outline btn--large" href="/projects/">View All Projects</a>
+</p>
+
+<h2>About</h2>
+<p>
+I am a Georgia Tech M.S. Analytics student in the Computational Data Science track with a Bachelor's of Science in Applied Mathematics and Statistics from Stony Brook University. I primarily work in <strong>Python</strong>, <strong>R</strong>, and <strong>SQL</strong> for my projects, 
+and right now, I am working on upskilling myself in data visualization, machine learning, and deep learning. I am passionate about using data to solve real-world problems and make a positive impact on society.
+</p>
+
+<p>
+I am seeking data science, analytics, and machine learning internship or full-time opportunities.
 </p>
 
 <h2> Education</h2> 
+<p><strong>Georgia Institute of Technology - Atlanta, Georgia</strong></p>
 <ul>
-  <li>Georgia Tech - M.S. Analytics (Computational Data Science) - <strong>Expected May 2027</strong></li>
-  <li>Stony Brook University - B.S. Applied Mathematics & Statistics - <strong>Graduated May 2025</strong></li>
+  <li>M.S. Analytics, Computational Data Science Track</li>
+  <li>Expected May 2027</li>
+</ul>
+
+<p><strong>Stony Brook University - Stony Brook, New York</strong></p>
+<ul>
+  <li>B.S. Applied Mathematics &amp; Statistics</li>
+  <li>Graduated May 2025</li>
 </ul>
 
 <h2>Contact</h2>
