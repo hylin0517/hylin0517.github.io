@@ -83,12 +83,13 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 
 
 <!-- JetBrains Mono for code -->
 <link rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap">
+
   </head>
 
   <body class="layout--single wide" dir="ltr">
@@ -111,7 +112,7 @@
         
         <a class="site-title" href="/">
           Hao Yang Lin
-          <span class="site-subtitle">Data Science &amp; Analytics, Machine Learning</span>
+          <span class="site-subtitle">Data Science, Analytics, and Machine Learning</span>
         </a>
         <ul class="visible-links"><li class="masthead__menu-item">
               <a
@@ -125,6 +126,12 @@
                 
                 
               >Projects</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/resume/"
+                
+                
+              >Resume</a>
             </li></ul>
         
         <button class="greedy-nav__toggle hidden" type="button">
@@ -171,7 +178,7 @@
     </h3>
     
       <div class="author__bio p-note" itemprop="description">
-        <p>MSA Student @ GT</p>
+        <p>MS Data Science student at Georgia Tech seeking internship and full-time roles</p>
 
       </div>
     
@@ -188,6 +195,8 @@
 
       
         
+          
+            <li><a href="mailto:hylin0517@gmail.com" rel="nofollow noopener noreferrer me"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">hylin0517@gmail.com</span></a></li>
           
         
           
@@ -294,57 +303,189 @@
       <section class="page__content e-content" itemprop="text">
         
         <p class="project-page-intro">
-This portfolio collects my work across recommendation systems, predictive modeling, forecasting, and analytics. Each project is framed around a concrete problem, the modeling approach, and the outcome or decision it supports.
+This page is a visual index of my current portfolio work. Each project links to a deeper case study, with a short description of what it is and the tools used to build it.
 </p>
 
-<div class="project-card-grid project-card-grid--portfolio">
-  <a class="project-card project-card--spotify" href="/projects/spotify-recommendation/">
-    <div class="project-card__eyebrow">Recommendation Systems</div>
-    <h2 class="project-card__title">Spotify New Song Recommender</h2>
-    <p class="project-card__body">
-      Machine learning recommendation pipeline designed to surface new songs that match a user's listening habits and genre preferences.
+<div class="project-showcase-grid">
+  <article class="project-showcase">
+    <a class="project-showcase__media project-showcase__media--spotify" href="/projects/spotify-recommendation/" aria-label="Open Spotify New Song Recommender project">
+      <div class="project-showcase__frame">
+        <div class="project-showcase__placeholder project-showcase__placeholder--bars"></div>
+      </div>
+    </a>
+    <div class="project-showcase__eyebrow">Recommendation Systems</div>
+    <h2 class="project-showcase__title">
+      <a href="/projects/spotify-recommendation/">Spotify New Song Recommender</a>
+    </h2>
+    <p class="project-showcase__description">
+      A machine learning recommender that suggests newly released Spotify tracks based on listening history and song similarity.
     </p>
-    <p class="project-card__detail">
-      Combined Spotify API data, affinity features, and ranking-aware LightGBM evaluation to optimize recommendation quality.
-    </p>
-    <div class="project-card__meta">
-      <span>Python</span>
-      <span>LightGBM</span>
-      <span>Precision@10: 72%</span>
+    <div class="project-showcase__tools">
+      <span class="project-showcase__tools-label">Tools Used</span>
+      <ul class="project-showcase__tool-list">
+        <li>Python</li>
+        <li>Spotify API</li>
+        <li>pandas</li>
+        <li>LightGBM</li>
+        <li>Plotly</li>
+      </ul>
     </div>
-  </a>
+    <div class="project-showcase__links">
+      <a class="project-showcase__repo" href="https://github.com/your-username/spotify-new-song-recommender" target="_blank" rel="noopener noreferrer" aria-label="Spotify New Song Recommender GitHub repository">
+        <i class="fab fa-github" aria-hidden="true"></i>
+      </a>
+    </div>
+  </article>
 
-  <a class="project-card project-card--churn" href="/projects/nba-ticket-demand-pricing/">
-    <div class="project-card__eyebrow">Pricing &amp; Forecasting</div>
-    <h2 class="project-card__title">NBA Ticket Demand Forecasting</h2>
-    <p class="project-card__body">
-      Ticket demand and pricing strategy project centered on forecasting game-level demand and recommending pricing adjustments.
+  <article class="project-showcase">
+    <a class="project-showcase__media project-showcase__media--nba" href="/projects/nba-ticket-demand-pricing/" aria-label="Open NBA Ticket Demand Forecasting project">
+      <div class="project-showcase__frame">
+        <div class="project-showcase__placeholder project-showcase__placeholder--court"></div>
+      </div>
+    </a>
+    <div class="project-showcase__eyebrow">Pricing &amp; Forecasting</div>
+    <h2 class="project-showcase__title">
+      <a href="/projects/nba-ticket-demand-pricing/">NBA Ticket Demand Forecasting</a>
+    </h2>
+    <p class="project-showcase__description">
+      A forecasting and pricing project that estimates NBA ticket demand and recommends how prices should move before each game.
     </p>
-    <p class="project-card__detail">
-      Placeholder case study for combining demand forecasting with dynamic pricing logic in a sports analytics setting.
-    </p>
-    <div class="project-card__meta">
-      <span>Python</span>
-      <span>Forecasting</span>
-      <span>Pricing</span>
+    <div class="project-showcase__tools">
+      <span class="project-showcase__tools-label">Tools Used</span>
+      <ul class="project-showcase__tool-list">
+        <li>Python</li>
+        <li>pandas</li>
+        <li>XGBoost</li>
+        <li>statsmodels</li>
+        <li>scikit-learn</li>
+      </ul>
     </div>
-  </a>
+    <div class="project-showcase__links">
+      <a class="project-showcase__repo" href="https://github.com/your-username/nba-ticket-demand-pricing" target="_blank" rel="noopener noreferrer" aria-label="NBA Ticket Demand Forecasting GitHub repository">
+        <i class="fab fa-github" aria-hidden="true"></i>
+      </a>
+    </div>
+  </article>
 
-  <a class="project-card project-card--forecast" href="/projects/airbnb-nyc-pricing-analysis/">
-    <div class="project-card__eyebrow">Data Science</div>
-    <h2 class="project-card__title">Airbnb NYC Pricing Analysis</h2>
-    <p class="project-card__body">
-      Data analysis and predictive modeling project focused on what drives Airbnb prices across NYC and how accurately listing prices can be estimated.
+  <article class="project-showcase">
+    <a class="project-showcase__media project-showcase__media--airbnb" href="/projects/airbnb-nyc-pricing-analysis/" aria-label="Open Airbnb NYC Pricing Analysis project">
+      <div class="project-showcase__frame">
+        <div class="project-showcase__placeholder project-showcase__placeholder--map"></div>
+      </div>
+    </a>
+    <div class="project-showcase__eyebrow">Data Science</div>
+    <h2 class="project-showcase__title">
+      <a href="/projects/airbnb-nyc-pricing-analysis/">Airbnb NYC Pricing Analysis</a>
+    </h2>
+    <p class="project-showcase__description">
+      An analysis of what drives Airbnb prices in New York City and how accurately listing prices can be predicted from listing features.
     </p>
-    <p class="project-card__detail">
-      Placeholder case study for feature-driven price analysis, exploratory data analysis, and predictive modeling in R.
-    </p>
-    <div class="project-card__meta">
-      <span>R</span>
-      <span>EDA</span>
-      <span>Prediction</span>
+    <div class="project-showcase__tools">
+      <span class="project-showcase__tools-label">Tools Used</span>
+      <ul class="project-showcase__tool-list">
+        <li>R</li>
+        <li>tidyverse</li>
+        <li>ggplot2</li>
+        <li>caret</li>
+        <li>R Markdown</li>
+      </ul>
     </div>
-  </a>
+    <div class="project-showcase__links">
+      <a class="project-showcase__repo" href="https://github.com/your-username/airbnb-nyc-pricing-analysis" target="_blank" rel="noopener noreferrer" aria-label="Airbnb NYC Pricing Analysis GitHub repository">
+        <i class="fab fa-github" aria-hidden="true"></i>
+      </a>
+    </div>
+  </article>
+
+  <article class="project-showcase">
+    <a class="project-showcase__media" href="/projects/customer-segmentation-analysis/" aria-label="Open Customer Segmentation Analysis project">
+      <div class="project-showcase__frame">
+        <div class="project-showcase__placeholder project-showcase__placeholder--clusters"></div>
+      </div>
+    </a>
+    <div class="project-showcase__eyebrow">Machine Learning</div>
+    <h2 class="project-showcase__title">
+      <a href="/projects/customer-segmentation-analysis/">Customer Segmentation Analysis</a>
+    </h2>
+    <p class="project-showcase__description">
+      An unsupervised learning project that groups customers into behavior-based segments for targeting and retention strategy.
+    </p>
+    <div class="project-showcase__tools">
+      <span class="project-showcase__tools-label">Tools Used</span>
+      <ul class="project-showcase__tool-list">
+        <li>Python</li>
+        <li>pandas</li>
+        <li>scikit-learn</li>
+        <li>PCA</li>
+        <li>Tableau</li>
+      </ul>
+    </div>
+    <div class="project-showcase__links">
+      <a class="project-showcase__repo" href="https://github.com/your-username/customer-segmentation-analysis" target="_blank" rel="noopener noreferrer" aria-label="Customer Segmentation Analysis GitHub repository">
+        <i class="fab fa-github" aria-hidden="true"></i>
+      </a>
+    </div>
+  </article>
+
+  <article class="project-showcase">
+    <a class="project-showcase__media" href="/projects/ab-test-conversion-analysis/" aria-label="Open A/B Test Conversion Analysis project">
+      <div class="project-showcase__frame">
+        <div class="project-showcase__placeholder project-showcase__placeholder--experiment"></div>
+      </div>
+    </a>
+    <div class="project-showcase__eyebrow">Experimentation</div>
+    <h2 class="project-showcase__title">
+      <a href="/projects/ab-test-conversion-analysis/">A/B Test Conversion Analysis</a>
+    </h2>
+    <p class="project-showcase__description">
+      An experimentation project that measures whether a product change improved conversion and estimates the size of the impact.
+    </p>
+    <div class="project-showcase__tools">
+      <span class="project-showcase__tools-label">Tools Used</span>
+      <ul class="project-showcase__tool-list">
+        <li>Python</li>
+        <li>SQL</li>
+        <li>pandas</li>
+        <li>scipy</li>
+        <li>statsmodels</li>
+      </ul>
+    </div>
+    <div class="project-showcase__links">
+      <a class="project-showcase__repo" href="https://github.com/your-username/ab-test-conversion-analysis" target="_blank" rel="noopener noreferrer" aria-label="A/B Test Conversion Analysis GitHub repository">
+        <i class="fab fa-github" aria-hidden="true"></i>
+      </a>
+    </div>
+  </article>
+
+  <article class="project-showcase">
+    <a class="project-showcase__media" href="/projects/retail-sales-dashboard/" aria-label="Open Retail Sales Dashboard project">
+      <div class="project-showcase__frame">
+        <div class="project-showcase__placeholder project-showcase__placeholder--dashboard"></div>
+      </div>
+    </a>
+    <div class="project-showcase__eyebrow">Analytics</div>
+    <h2 class="project-showcase__title">
+      <a href="/projects/retail-sales-dashboard/">Retail Sales Dashboard</a>
+    </h2>
+    <p class="project-showcase__description">
+      An analytics dashboard that tracks revenue, product mix, and regional performance for faster business reporting.
+    </p>
+    <div class="project-showcase__tools">
+      <span class="project-showcase__tools-label">Tools Used</span>
+      <ul class="project-showcase__tool-list">
+        <li>Power BI</li>
+        <li>SQL</li>
+        <li>Python</li>
+        <li>DAX</li>
+        <li>Excel</li>
+      </ul>
+    </div>
+    <div class="project-showcase__links">
+      <a class="project-showcase__repo" href="https://github.com/your-username/retail-sales-dashboard" target="_blank" rel="noopener noreferrer" aria-label="Retail Sales Dashboard GitHub repository">
+        <i class="fab fa-github" aria-hidden="true"></i>
+      </a>
+    </div>
+  </article>
 </div>
 
         

@@ -16,7 +16,7 @@
 
 
 <!-- begin _includes/seo.html --><title>Hao Yang Lin</title>
-<meta name="description" content="Hello! Thanks for visiting. Here are some of my projects that I have done during my free time.">
+<meta name="description" content="Hello! Thanks for visting! Press to view some of my projects completed based on my interests">
 
 
   <meta name="author" content="Hao Yang Lin">
@@ -30,11 +30,11 @@
 <meta property="og:url" content="http://localhost:4000/">
 
 
-  <meta property="og:description" content="Hello! Thanks for visiting. Here are some of my projects that I have done during my free time.">
+  <meta property="og:description" content="Hello! Thanks for visting! Press to view some of my projects completed based on my interests">
 
 
 
-  <meta property="og:image" content="http://localhost:4000/assets/images/data-overlay.avif">
+  <meta property="og:image" content="http://localhost:4000/assets/images/data-viz-bg.jpeg">
   
 
 
@@ -96,12 +96,13 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 
 
 <!-- JetBrains Mono for code -->
 <link rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap">
+
   </head>
 
   <body class="layout--single wide" dir="ltr">
@@ -124,7 +125,7 @@
         
         <a class="site-title" href="/">
           Hao Yang Lin
-          <span class="site-subtitle">Data Science &amp; Analytics, Machine Learning</span>
+          <span class="site-subtitle">Data Science, Analytics, and Machine Learning</span>
         </a>
         <ul class="visible-links"><li class="masthead__menu-item">
               <a
@@ -138,6 +139,12 @@
                 
                 
               >Projects</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/resume/"
+                
+                
+              >Resume</a>
             </li></ul>
         
         <button class="greedy-nav__toggle hidden" type="button">
@@ -165,7 +172,7 @@
 
 
 <div class="page__hero--overlay"
-  style=" background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url('/assets/images/data-overlay.avif');"
+  style=" background-image: linear-gradient(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12)), url('/assets/images/data-viz-bg.jpeg');"
 >
   
     <div class="wrapper">
@@ -176,7 +183,7 @@
         
       </h1>
       
-        <p class="page__lead">Hello! Thanks for visiting. Here are some of my projects that I have done during my free time.
+        <p class="page__lead">Hello! Thanks for visting! Press to view some of my projects completed based on my interests
 </p>
       
       
@@ -225,7 +232,7 @@
     </h3>
     
       <div class="author__bio p-note" itemprop="description">
-        <p>MSA Student @ GT</p>
+        <p>MS Data Science student at Georgia Tech seeking internship and full-time roles</p>
 
       </div>
     
@@ -242,6 +249,8 @@
 
       
         
+          
+            <li><a href="mailto:hylin0517@gmail.com" rel="nofollow noopener noreferrer me"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">hylin0517@gmail.com</span></a></li>
           
         
           
@@ -327,7 +336,7 @@
 
   <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
     <meta itemprop="headline" content="Hao Yang Lin">
-    <meta itemprop="description" content="Hello! Thanks for visiting. Here are some of my projects that I have done during my free time.">
+    <meta itemprop="description" content="Hello! Thanks for visting! Press to view some of my projects completed based on my interests">
     
     
 
@@ -336,76 +345,20 @@
 
       <section class="page__content e-content" itemprop="text">
         
-        <h1>Featured Projects</h1>
+        <h2>About</h2>
 <p>
-Selected work across recommendation systems, predictive modeling, and analytics. Each project focuses on turning messy data into decisions, products, or measurable outcomes.
-</p>
-
-<div class="project-card-grid">
-  <a class="project-card project-card--spotify" href="/projects/spotify-recommendation/">
-    <div class="project-card__eyebrow">Recommendation Systems</div>
-    <h2 class="project-card__title">Spotify New Song Recommender</h2>
-    <p class="project-card__body">
-      Ranking-aware recommendation pipeline built from Spotify metadata, listening behavior, and engineered affinity features.
-    </p>
-    <div class="project-card__meta">
-      <span>LightGBM</span>
-      <span>Precision@10: 72%</span>
-    </div>
-  </a>
-
-  <a class="project-card project-card--churn" href="/projects/nba-ticket-demand-pricing/">
-    <div class="project-card__eyebrow">Pricing & Forecasting</div>
-    <h2 class="project-card__title">NBA Ticket Demand Forecasting</h2>
-    <p class="project-card__body">
-      Demand forecasting and pricing strategy project designed to estimate ticket demand and support dynamic pricing recommendations.
-    </p>
-    <div class="project-card__meta">
-      <span>Forecasting</span>
-      <span>Dynamic Pricing</span>
-    </div>
-  </a>
-
-  <a class="project-card project-card--forecast" href="/projects/airbnb-nyc-pricing-analysis/">
-    <div class="project-card__eyebrow">Data Science</div>
-    <h2 class="project-card__title">Airbnb NYC Pricing Analysis</h2>
-    <p class="project-card__body">
-      Analysis and modeling project focused on what drives Airbnb pricing in NYC and how accurately listing prices can be predicted.
-    </p>
-    <div class="project-card__meta">
-      <span>R</span>
-      <span>EDA + Prediction</span>
-    </div>
-  </a>
-</div>
-
-<p class="project-card-grid__footer">
-See the full <a href="/projects/">projects portfolio</a> for more work and future case studies.
-</p>
-
-
-<h2>About Me</h2>
-<p>
-I'm currently a graduate student at Georgia Tech pursuing a M.S. in Data Analytics with a track focus in Computational Data Science & Machine Learning.
-I attended Stony Brook University for my undergraduate studies for Applied Mathematics and Statisitics, where I developed a strong foundation in probability and statistical thinking.
-</p>
-
-<p>
-Through personal projects and coursework, I have honed my skills in <strong>data analysis, machine learning, and statistical modeling.</strong>
-<i>Data</i> is an ambigious field nowadays, but to me, data is a tool that helps with storytelling and solve very big and complicated problems.
-I mostly use <strong>Python</strong> and <strong>R</strong> for my data science projects, but love to create <strong>data visualizations</strong> to show how impactful data can be.
-I am currently looking for internship and full-time opportunities in data science, analytics, and machine learning roles.
+I am a Georgia Tech M.S. Analytics student in the Computational Data Science track. I have a background in Applied Mathematics and Statistics from Stony Brook University. I work primarily in <strong>Python</strong>, <strong>R</strong>, and <strong>SQL</strong>, and I am currently seeking data science, analytics, and machine learning internship or full-time opportunities.
 </p>
 
 <h2> Education</h2> 
 <ul>
-  <li>Georgia Tech - M.S. Analytics (Data Science) - Expected May 2027</li>
-  <li>Stony Brook University - B.S. Applied Mathematics & Statistics - Graduated May 2025</li>
+  <li>Georgia Tech - M.S. Analytics (Computational Data Science) - <strong>Expected May 2027</strong></li>
+  <li>Stony Brook University - B.S. Applied Mathematics & Statistics - <strong>Graduated May 2025</strong></li>
 </ul>
 
-<h2>Contact Me</h2>
+<h2>Contact</h2>
 <p>
-email me at hylin0517 [at] gmail [dot] com
+email me at hylin0517@gmail.com
 </p>
 
 <p>
