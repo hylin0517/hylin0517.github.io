@@ -136,9 +136,9 @@ analytics:
 # Site Author
 author:
   name             : "Hao Yang Lin"
-  avatar           : "/assets/images/luffy.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/profile.jpeg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "MSA Student @ GT " # short bio that appears in the author profile section
-  location         : "New York City, NY"
+  location         : "New York"
   email            :
   links:
     - label: "Email"

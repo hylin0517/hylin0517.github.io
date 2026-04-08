@@ -1,14 +1,19 @@
+
+
 <!doctype html>
 <!--
-  Minimal Mistakes Jekyll Theme 4.27.3 by Michael Rose
-  Copyright 2013-2025 Michael Rose - mademistakes.com | @mmistakes
+  Minimal Mistakes Jekyll Theme 4.28.0 by Michael Rose
+  Copyright 2013-2026 Michael Rose - mademistakes.com | @mmistakes
+  Copyright 2024-2026 iBug - ibugone.com | @iBug
   Free for personal and commercial use under the MIT license
   https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
 -->
 
 <html lang="en-US" class="no-js">
   <head>
-    <meta charset="utf-8">
+    
+<meta charset="utf-8">
+
 
 <!-- begin _includes/seo.html --><title>Projects - Hao Yang Lin</title>
 <meta name="description" content="Personal Website of Hao Yang Lin to showcase projects">
@@ -26,6 +31,8 @@
 
 
   <meta property="og:description" content="Personal Website of Hao Yang Lin to showcase projects">
+
+
 
 
 
@@ -85,7 +92,8 @@
   </head>
 
   <body class="layout--single wide" dir="ltr">
-    <nav class="skip-links">
+    
+<nav class="skip-links" aria-label="Skip links">
   <ul>
     <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
     <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
@@ -95,10 +103,11 @@
 
     
 
+
 <div class="masthead">
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
-      <nav id="site-nav" class="greedy-nav">
+      <nav id="site-nav" class="greedy-nav" aria-label="Primary navigation">
         
         <a class="site-title" href="/">
           Hao Yang Lin
@@ -136,10 +145,14 @@
 
 
 
+
+
 <div id="main" role="main">
   
+
   <div class="sidebar sticky">
   
+
 
 
 <div itemscope itemtype="https://schema.org/Person" class="h-card">
@@ -147,7 +160,7 @@
   
     <div class="author__avatar">
       <a href="http://localhost:4000/">
-        <img src="/assets/images/luffy.png" alt="Hao Yang Lin" itemprop="image" class="u-photo">
+        <img src="/assets/images/profile.jpeg" alt="Hao Yang Lin" itemprop="image" class="u-photo">
       </a>
     </div>
   
@@ -169,7 +182,7 @@
     <ul class="author__urls social-icons">
       
         <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
-          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name" class="p-locality">New York City, NY</span>
+          <i class="fas fa-fw fa-location-dot" aria-hidden="true"></i> <span itemprop="name" class="p-locality">New York</span>
         </li>
       
 
@@ -253,11 +266,12 @@
 </div>
 
   
+  
   </div>
 
 
 
-  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
     <meta itemprop="headline" content="Projects">
     
     
@@ -266,37 +280,72 @@
     <div class="page__inner-wrap">
       
         <header>
-          <h1 id="page-title" class="page__title" itemprop="headline">
+          <h1 id="page-title" class="page__title p-name" itemprop="headline">
             <a href="http://localhost:4000/projects/" itemprop="url">Projects
 </a>
           </h1>
           
 
 
+
         </header>
       
 
-      <section class="page__content" itemprop="text">
+      <section class="page__content e-content" itemprop="text">
         
-        <h2 id="work-in-progress">Work in Progress</h2>
+        <p class="project-page-intro">
+This portfolio collects my work across recommendation systems, predictive modeling, forecasting, and analytics. Each project is framed around a concrete problem, the modeling approach, and the outcome or decision it supports.
+</p>
 
-<h2 id="spotify-new-song-recommender"><a href="/projects/spotify-recommendation/">Spotify New Song Recommender</a></h2>
+<div class="project-card-grid project-card-grid--portfolio">
+  <a class="project-card project-card--spotify" href="/projects/spotify-recommendation/">
+    <div class="project-card__eyebrow">Recommendation Systems</div>
+    <h2 class="project-card__title">Spotify New Song Recommender</h2>
+    <p class="project-card__body">
+      Machine learning recommendation pipeline designed to surface new songs that match a user's listening habits and genre preferences.
+    </p>
+    <p class="project-card__detail">
+      Combined Spotify API data, affinity features, and ranking-aware LightGBM evaluation to optimize recommendation quality.
+    </p>
+    <div class="project-card__meta">
+      <span>Python</span>
+      <span>LightGBM</span>
+      <span>Precision@10: 72%</span>
+    </div>
+  </a>
 
-<ul>
-  <li><strong>Goal:</strong> Surface new tracks that align with a user’s listening habits using Spotify metadata and behavior.</li>
-  <li><strong>Approach:</strong> Ingested Spotify API data, engineered affinity and genre metrics, trained ranking-aware LightGBM, and validated via temporal holdouts with precision@k and MAP@k.</li>
-  <li><strong>Result:</strong> Precision@10 of 72% and MAP@10 of 0.65 in cross-validated splits, plus an interactive Streamlit demo that recommends live songs.</li>
-  <li><strong>Stack:</strong> Python, pandas, LightGBM, Spotify API, Streamlit, Plotly.</li>
-  <li><strong>Links:</strong> <a href="/projects/customer-churn-prediction/">Case study</a> · <a href="https://github.com/hylin0517/spotify-new-song-recommender">GitHub repo</a></li>
-</ul>
+  <a class="project-card project-card--churn" href="/projects/nba-ticket-demand-pricing/">
+    <div class="project-card__eyebrow">Pricing &amp; Forecasting</div>
+    <h2 class="project-card__title">NBA Ticket Demand Forecasting</h2>
+    <p class="project-card__body">
+      Ticket demand and pricing strategy project centered on forecasting game-level demand and recommending pricing adjustments.
+    </p>
+    <p class="project-card__detail">
+      Placeholder case study for combining demand forecasting with dynamic pricing logic in a sports analytics setting.
+    </p>
+    <div class="project-card__meta">
+      <span>Python</span>
+      <span>Forecasting</span>
+      <span>Pricing</span>
+    </div>
+  </a>
 
-<hr />
-
-<h2 id="more-work-coming-soon">More work coming soon</h2>
-
-<ul>
-  <li>Building out additional projects on recommendation, forecasting, and experimentation.</li>
-</ul>
+  <a class="project-card project-card--forecast" href="/projects/airbnb-nyc-pricing-analysis/">
+    <div class="project-card__eyebrow">Data Science</div>
+    <h2 class="project-card__title">Airbnb NYC Pricing Analysis</h2>
+    <p class="project-card__body">
+      Data analysis and predictive modeling project focused on what drives Airbnb prices across NYC and how accurately listing prices can be estimated.
+    </p>
+    <p class="project-card__detail">
+      Placeholder case study for feature-driven price analysis, exploratory data analysis, and predictive modeling in R.
+    </p>
+    <div class="project-card__meta">
+      <span>R</span>
+      <span>EDA</span>
+      <span>Prediction</span>
+    </div>
+  </a>
+</div>
 
         
       </section>
@@ -305,14 +354,21 @@
         
         
 
+  
+
+  
+
 
         
+
+
 
       </footer>
 
       
 
       
+
 
     </div>
 
@@ -334,6 +390,7 @@
 
 <!-- end custom footer snippets -->
         
+
 
 <div class="page__footer-follow">
   <ul class="social-icons">
@@ -362,19 +419,21 @@
     
 
     
-      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-square-rss" aria-hidden="true"></i> Feed</a></li>
     
   </ul>
 </div>
 
 
-<div class="page__footer-copyright">&copy; 2025 <a href="http://localhost:4000">Hao Yang Lin</a>. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
+<div class="page__footer-copyright">&copy; 2026 <a href="http://localhost:4000">Hao Yang Lin</a>. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
 
       </footer>
     </div>
 
     
+
   <script src="/assets/js/main.min.js"></script>
+
 
 
 

@@ -1,14 +1,19 @@
+
+
 <!doctype html>
 <!--
-  Minimal Mistakes Jekyll Theme 4.27.3 by Michael Rose
-  Copyright 2013-2025 Michael Rose - mademistakes.com | @mmistakes
+  Minimal Mistakes Jekyll Theme 4.28.0 by Michael Rose
+  Copyright 2013-2026 Michael Rose - mademistakes.com | @mmistakes
+  Copyright 2024-2026 iBug - ibugone.com | @iBug
   Free for personal and commercial use under the MIT license
   https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
 -->
 
 <html lang="en-US" class="no-js">
   <head>
-    <meta charset="utf-8">
+    
+<meta charset="utf-8">
+
 
 <!-- begin _includes/seo.html --><title>Spotify New Song Recommender - Hao Yang Lin</title>
 <meta name="description" content="Personal Website of Hao Yang Lin to showcase projects">
@@ -26,6 +31,8 @@
 
 
   <meta property="og:description" content="Personal Website of Hao Yang Lin to showcase projects">
+
+
 
 
 
@@ -85,7 +92,8 @@
   </head>
 
   <body class="layout--single" dir="ltr">
-    <nav class="skip-links">
+    
+<nav class="skip-links" aria-label="Skip links">
   <ul>
     <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
     <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
@@ -95,10 +103,11 @@
 
     
 
+
 <div class="masthead">
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
-      <nav id="site-nav" class="greedy-nav">
+      <nav id="site-nav" class="greedy-nav" aria-label="Primary navigation">
         
         <a class="site-title" href="/">
           Hao Yang Lin
@@ -136,10 +145,14 @@
 
 
 
+
+
 <div id="main" role="main">
   
+
   <div class="sidebar sticky">
   
+
 
 
 <div itemscope itemtype="https://schema.org/Person" class="h-card">
@@ -147,7 +160,7 @@
   
     <div class="author__avatar">
       <a href="http://localhost:4000/">
-        <img src="/assets/images/luffy.png" alt="Hao Yang Lin" itemprop="image" class="u-photo">
+        <img src="/assets/images/profile.jpeg" alt="Hao Yang Lin" itemprop="image" class="u-photo">
       </a>
     </div>
   
@@ -169,7 +182,7 @@
     <ul class="author__urls social-icons">
       
         <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
-          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name" class="p-locality">New York City, NY</span>
+          <i class="fas fa-fw fa-location-dot" aria-hidden="true"></i> <span itemprop="name" class="p-locality">New York</span>
         </li>
       
 
@@ -253,11 +266,12 @@
 </div>
 
   
+  
   </div>
 
 
 
-  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
     <meta itemprop="headline" content="Spotify New Song Recommender">
     
     
@@ -266,36 +280,22 @@
     <div class="page__inner-wrap">
       
         <header>
-          <h1 id="page-title" class="page__title" itemprop="headline">
+          <h1 id="page-title" class="page__title p-name" itemprop="headline">
             <a href="http://localhost:4000/projects/spotify-recommendation/" itemprop="url">Spotify New Song Recommender
 </a>
           </h1>
           
 
 
+
         </header>
       
 
-      <section class="page__content" itemprop="text">
+      <section class="page__content e-content" itemprop="text">
         
         <h2 id="overview">Overview</h2>
 
-<p>Built a recommendation pipeline that surfaces new songs a user is likely to enjoy by combining Spotify API metadata with engineered features and machine learning.</p>
-
-<p><strong>Key Results:</strong></p>
-
-<ul>
-  <li>Featured a Streamlit demo for live recommendation exploration</li>
-  <li>Validated model with precision, recall, and ranking metrics</li>
-  <li>Trained on millions of streaming records pulled via Spotifyʼs Web API</li>
-</ul>
-
-<p><strong>Tech Stack:</strong> Python, pandas, scikit-learn, LightGBM, Spotify API, Streamlit, Plotly</p>
-
-<p><strong>GitHub:</strong> <a href="https://github.com/hylin0517/spotify-new-song-recommender">View Code</a>
-<strong>Live Demo:</strong> <a href="https://share.streamlit.io/example/spotify-new-song">Streamlit app</a></p>
-
-<hr />
+<h2 id="built-a-recommendation-pipeline-that-surfaces-new-songs-a-user-is-likely-to-enjoy-by-combining-spotify-api-metadata-with-engineered-features-and-machine-learning">Built a recommendation pipeline that surfaces new songs a user is likely to enjoy by combining Spotify API metadata with engineered features and machine learning.</h2>
 
 <h2 id="the-problem">The Problem</h2>
 
@@ -328,27 +328,6 @@
 
 <hr />
 
-<h2 id="results">Results</h2>
-
-<p>– <strong>Precision@10:</strong> 72%
-– <strong>MAP@10:</strong> 0.65
-– <strong>ROC AUC:</strong> 0.89</p>
-
-<p>The deployed recommender delivers new songs aligned with current user tendencies, enabling playlist creators to keep their listeners engaged.</p>
-
-<hr />
-
-<h2 id="what-i-learned">What I Learned</h2>
-
-<ul>
-  <li>Building Spotify API pipelines and authentication flows</li>
-  <li>Engineering temporal and behavioral features for recommender signals</li>
-  <li>Ranking-focused evaluation for consumer-facing predictions</li>
-  <li>Deploying an interactive Streamlit interface for live exploration</li>
-</ul>
-
-<hr />
-
 <p><a href="/projects/">← Back to Projects</a></p>
 
         
@@ -358,14 +337,21 @@
         
         
 
+  
+
+  
+
 
         
+
+
 
       </footer>
 
       
 
       
+
 
     </div>
 
@@ -387,6 +373,7 @@
 
 <!-- end custom footer snippets -->
         
+
 
 <div class="page__footer-follow">
   <ul class="social-icons">
@@ -415,19 +402,21 @@
     
 
     
-      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-square-rss" aria-hidden="true"></i> Feed</a></li>
     
   </ul>
 </div>
 
 
-<div class="page__footer-copyright">&copy; 2025 <a href="http://localhost:4000">Hao Yang Lin</a>. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
+<div class="page__footer-copyright">&copy; 2026 <a href="http://localhost:4000">Hao Yang Lin</a>. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
 
       </footer>
     </div>
 
     
+
   <script src="/assets/js/main.min.js"></script>
+
 
 
 
