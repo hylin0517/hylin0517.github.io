@@ -14,7 +14,7 @@ This page is a visual index of my current portfolio work. Each project links to 
   <article class="project-showcase">
     <a class="project-showcase__media project-showcase__media--spotify" href="/projects/spotify-recommendation/" aria-label="Open Spotify New Song Recommender project">
       <div class="project-showcase__frame">
-        <div class="project-showcase__placeholder project-showcase__placeholder--bars"></div>
+        <img class="project-showcase__image" src="/assets/images/spotify-rec.jpg" alt="Spotify genre and playlist tiles representing the song recommender project">
       </div>
     </a>
     <div class="project-showcase__eyebrow">Recommendation Systems</div>
@@ -44,7 +44,7 @@ This page is a visual index of my current portfolio work. Each project links to 
   <article class="project-showcase">
     <a class="project-showcase__media project-showcase__media--nba" href="/projects/nba-ticket-demand-pricing/" aria-label="Open NBA Ticket Demand Forecasting project">
       <div class="project-showcase__frame">
-        <div class="project-showcase__placeholder project-showcase__placeholder--court"></div>
+        <img class="project-showcase__image" src="/assets/images/Ticketmaster_NBA_Partnership.jpg" alt="Ticketmaster and NBA partnership graphic representing ticket demand forecasting and pricing">
       </div>
     </a>
     <div class="project-showcase__eyebrow">Pricing & Forecasting</div>
