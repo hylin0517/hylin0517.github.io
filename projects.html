@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hao Yang Lin &mdash; Projects</title>
+    <link rel="icon" href="./images/profile.jpeg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/projects.css" />
+  </head>
+  <body>
+    <div id="nav">
+      <h2><a href="./index.html">About Me</a></h2>
+      <h2><a href="./projects.html">Projects</a></h2>
+    </div>
+    <main>
+      <div id="intro">
+        <h1>Projects</h1>
+      </div>
+
+      <div id="content">
+        <ul class="project-list">
+
+          <li class="project-row">
+            <a
+              class="project-link"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://github.com/hylin0517"
+            >
+              <div class="project-row__media">
+                <img src="./media/spotify-rec.jpg" alt="Spotify song recommender project cover" />
+              </div>
+              <div class="project-row__body">
+                <h4 class="project-title">Spotify New Song Recommender</h4>
+                <p class="project-description">
+                  A machine learning recommender that suggests newly released Spotify tracks based on listening history and song similarity. Pulled metadata and audio features from the Spotify API, engineered user-song affinity signals, and ranked candidates with a gradient-boosted model evaluated on precision@k and MAP@k.
+                </p>
+                <p class="project-tags">
+                  <span>Python</span><span>Spotify API</span><span>pandas</span><span>LightGBM</span><span>Plotly</span>
+                </p>
+              </div>
+            </a>
+          </li>
+
+          <li class="project-row">
+            <a
+              class="project-link"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://github.com/hylin0517"
+            >
+              <div class="project-row__media">
+                <img src="./media/Ticketmaster_NBA_Partnership.jpg" alt="NBA ticket demand forecasting project cover" />
+              </div>
+              <div class="project-row__body">
+                <h4 class="project-title">NBA Ticket Demand Forecasting</h4>
+                <p class="project-description">
+                  A forecasting and pricing project that estimates NBA ticket demand and recommends how prices should move before each game. Combined a gradient-boosted demand model with classical time-series baselines, then translated the forecasts into price recommendations against a revenue objective.
+                </p>
+                <p class="project-tags">
+                  <span>Python</span><span>pandas</span><span>XGBoost</span><span>statsmodels</span><span>scikit-learn</span>
+                </p>
+              </div>
+            </a>
+          </li>
+
+          <li class="project-row">
+            <a
+              class="project-link"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://github.com/hylin0517"
+            >
+              <div class="project-row__media">
+                <img src="./media/airbnb-nyc-cover.png" alt="Airbnb NYC pricing analysis project cover" />
+              </div>
+              <div class="project-row__body">
+                <h4 class="project-title">Airbnb NYC Pricing Analysis</h4>
+                <p class="project-description">
+                  An analysis of what drives Airbnb prices in New York City and how accurately listing prices can be predicted from listing features. Cleaned and explored the open NYC listings dataset, then compared regression and tree-based models with cross-validated error to identify the strongest price drivers.
+                </p>
+                <p class="project-tags">
+                  <span>R</span><span>tidyverse</span><span>ggplot2</span><span>caret</span><span>R Markdown</span>
+                </p>
+              </div>
+            </a>
+          </li>
+
+        </ul>
+      </div>
+    </main>
+  </body>
+</html>
